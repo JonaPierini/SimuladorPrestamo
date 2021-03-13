@@ -14,11 +14,11 @@ $(ulNosotros).append(liNosotros2)
 $(liNosotros2).text("Nos diferenciamos por nuestro trato personal y humano.")
 
 $(ulNosotros).append(liNosotros3)
-$(liNosotros3).text("Te acercamos miles de opciones para que puedas concretar eso que tanto queres.")
+$(liNosotros3).text("Te acercamos miles de opciones para que puedas concretar eso que tanto queres. No lo dudes mas, acercate a nuestras oficinas.")
 // creo css para darle estilos
 $(ulNosotros).css("padding-top", "20px") 
 $(ulNosotros).css("text-align", "justify") 
-$(ulNosotros).css("height", "250px")
+$(ulNosotros).css("height", "350px")
 
 
 
@@ -38,11 +38,11 @@ $(ulHistoria).append(liHistoria2)
 $(liHistoria2).text("FacCredit inició sus actividades como institución financiera no bancaria llegando a un centenar de personas.")
 
 $(ulHistoria).append(liHistoria3)
-$(liHistoria3).text("Actualmente contamos con miles de clientes y excelentes propuestas para que sigas creciendo junto a nosotros.")
+$(liHistoria3).text("Actualmente contamos con miles de clientes y excelentes propuestas.")
 // creo css para darle estilos
 $(ulHistoria).css("padding-top", "20px") 
 $(ulHistoria).css("text-align", "justify") 
-$(ulHistoria).css("height", "250px")
+$(ulHistoria).css("height", "350px")
 
 
 // SECCION QUIENES SOMOS - Nuestor Valores
@@ -121,8 +121,8 @@ $(inputNombre).attr("type", "text")
 $(inputNombre).attr("placeholder", "Ingrese su Nombre")
 //Email
 $(divEmail).attr("id", "divEmail")
+$(inputEmail).attr("type", "email")
 $(inputEmail).attr("id", "inputEmail")
-$(inputEmail).attr("type", "text")
 $(inputEmail).attr("placeholder", "Ingrese su Email")
 // Monto
 $(divMonto).attr("id", "divMonto")
