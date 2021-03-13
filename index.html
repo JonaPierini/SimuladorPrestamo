@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedorNavegador">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">FacCredit</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="#quienesSomos">Quienes Somos</a>
+                  <a class="nav-link" href="#conteinerPrestamo">Solicita tu prestamo</a>
+                  <a class="nav-link" href="#conteinerTestimonio">Testimonios</a>
+                  <button class="contactanos" id="contactanos">Contactanos</button>
+
+                </div>
+              </div>
+            </div>
+        </nav>
+        
+        <h1 class="seccionTexto">Tu prestamo al Instante!</h1>
+      </div>
+
+      <div class="conteinerQuienesSomos" id="quienesSomos">
+        <div class="contenedorNosotros" id="contenedorNosotros">
+          <button class="sobreNosotros" id="sobreNosotros">Sobre Nosotros</button>
+        </div>
+        <div class="contenedorHistoria" id="contenedorHistoria">
+            <button class="nuestraHistoria" id="nuestraHistoria">Nuestra Historia</button>
+        </div>
+      </div>
+
+      <div class="conteinerValores" id="valores">
+        <button class="botonValores" id="botonValores">Nuestos Valores</button>
+        <div class="contenedorValores" id="contenedorValores"></div>
+      </div>
+
+      <div class="conteinerBotonValorContinuar">
+        <button id="botonValoresContinuar" class="botonValoresContinuar">Continuar Leyendo </button>
+      </div>
+      
+      
+      <div class="conteinerValoresContinuar" id="conteinerValoresContinuar">
+          <div class="ocultar" id="ocultar" style="display: none;" >
+            <h3 class="h3Valores">Etica</h3>
+            <p class="pValores">Desarrollamos nuestro trabajo, asumiendo tareas y responsabilidades con observancia y respeto a las leyes, tanto en su forma como en su espíritu. Evitamos que nuestras conductas individuales dentro o fuera de la institución, causen daño material o moral, comprometan o afecten la imagen, dignidad de las personas y del Grupo Santander.</p>
+            <h3 class="h3Valores">Transparencia</h3>
+            <p class="pValore">Como en todo lo que hacemos, nuestra transparencia es la que nos caracteriza </p>  
+          </div>
+      </div>
+
+      
+
+
+  
+    <!-- Seccion Prestamo -->
+    <div class="tituloPrestamo"><h1>CALCULA TU PRESTAMO</h1></div>
+
+    <div class="conteinerPrestamo" id="conteinerPrestamo"></div>
+
+
+
+       
+
+
+    <!-- Jquery -->
+    <script  src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script>
+    <!-- Poppers -->
+    <script src="https://unpkg.com/@popperjs/core@2.8.2/dist/umd/popper.min.js"></script>
+    <!-- Bottstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- Componentes -->
+    <script src="JavaScript/componentes.js"></script>
+     <!-- Funciones -->
+    <script src="JavaScript/funciones.js"></script>
+    <!-- Main -->
+    <script src="JavaScript/main.js"></script>
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="JavaScript/sweetAlert.js"></script>
+
+
+
+
+</body>
+</html>

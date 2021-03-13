@@ -1,0 +1,203 @@
+/* NAVEGADOR */
+
+.navbar-nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.navbar-brand{
+    color: #193755 !important;
+    font-size: 20px ;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.contenedorNavegador  {
+    width: 100%;
+    height: 500px;
+    background: #32295a; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(240, 93%, 5%, 0.22), hsla(238, 42%, 17%, 0.438)), url(Imagenes/acuerdo2.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(246, 92%, 19%, 0.699), hsla(246, 87%, 26%, 0.337)), url(Imagenes/acuerdo2.jpg);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    
+}
+
+/* Boton Contactanos */
+
+.contactanos{
+    background-color: #EA307A;
+    color: #F9FDFD;
+    font-weight: 500;
+    border: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+}
+
+/* SECCION Texto */
+.seccionTexto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+  
+
+}
+
+/* Seccion Quienes Somos */
+.conteinerQuienesSomos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 30px;
+}
+
+.contenedorNosotros{
+    width: 400px;
+    margin-right: 20px;
+}
+
+
+.sobreNosotros{
+    border-radius: 10px;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #EA307A;
+    color: whitesmoke;
+    border: none;
+    font-weight: 500;
+}
+
+.contenedorHistoria{
+    width: 400px;
+    margin-left: 20px;
+}
+
+.nuestraHistoria{
+    border-radius: 10px;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3c7dbd;
+    color: whitesmoke;
+    border: none;
+    font-weight: 500;
+}
+
+.conteinerValores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+    
+}
+
+.botonValores{
+    border-radius: 10px;
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #4BA5A6;
+    color: whitesmoke;
+    border: none;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+
+.contenedorValores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 850px;;
+}
+
+.h3Valores{
+    border-bottom: 1.5px solid #0193cf;
+    color:#0193cf;
+    font-size: 20px;
+ 
+}
+
+/* Seccion Continuar Leyendo */
+
+.conteinerValoresContinuar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
+
+.conteinerValoresContinuar h3{
+    width: 850px;
+}
+
+.conteinerValoresContinuar p{
+    width: 850px;
+}
+
+.conteinerBotonValorContinuar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+   
+}
+
+.botonValoresContinuar{
+     border:none;
+     color:  #EA307A;
+     background-color: transparent;
+     border-bottom: 2px solid  #EA307A;
+     width: 850px;
+     font-style: italic;
+     
+    
+}
+
+
+/* SECCION PRESTAMO */
+
+.tituloPrestamo{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.conteinerPrestamo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#divNombre, #divEmail, #divPlazo, #divMonto, #divBotonEnviar{
+   margin-bottom: 10px;
+}
+
+#divNombre, #divEmail, #divPlazo, #divMonto, #divBotonEnviar{
+    height: 45px;
+ }
+
+#inputNombre, #inputEmail, #inputPlazo,  #inputMonto, #botonEnviar {
+    width: 500px;
+    height: 30px;
+    
+}
+
+
+
