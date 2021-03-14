@@ -98,7 +98,6 @@
     justify-content: center;
     align-items: center;
  
-    
 }
 
 .botonValores{
@@ -218,9 +217,13 @@
 
 /* Seccion Quienes Somos */
 
+.conteinerQuienesSomos{
+   margin-bottom: 0px;
+}
+
 .contenedorNosotros{
     width: 200px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 
@@ -231,6 +234,7 @@
 
 .contenedorHistoria{
     width: 200px;
+    margin-bottom: 15px;
 }
 
 .nuestraHistoria{
