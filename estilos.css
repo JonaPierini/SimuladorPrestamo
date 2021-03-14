@@ -275,6 +275,10 @@
        align-items: center;
 }
 
+.ola {
+    display: none;
+}
+
 /* Seccion Quienes Somos */
 
 .conteinerQuienesSomos{
@@ -282,23 +286,23 @@
 }
 
 .contenedorNosotros{
-    width: 200px;
+    width: 250px;
     margin-bottom: 15px;
 }
 
 
 .sobreNosotros{
-    width: 200px;
+    width: 260px;
     
 }
 
 .contenedorHistoria{
-    width: 200px;
+    width: 250px;
     margin-bottom: 15px;
 }
 
 .nuestraHistoria{
-    width: 200px;
+    width: 260px;
    
 }
       
