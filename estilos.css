@@ -236,9 +236,7 @@
     width: 200px;
    
 }
-
-
-        
+      
     /* Seccion valores */
 
 .botonValores{
@@ -271,5 +269,19 @@
 .botonValoresContinuar{
     width: 300px;
 }
+
+
+/* SECCION PRESTAMO */
+
+.tituloPrestamo h1{
+   font-size: 25px;
+}
+
+#inputNombre, #inputEmail, #inputPlazo,  #inputMonto, #botonEnviar {
+    width: 300px;
+  
+    
+}
+
 
 }
