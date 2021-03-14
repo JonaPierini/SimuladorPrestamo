@@ -15,7 +15,7 @@
 
 .contenedorNavegador  {
     width: 100%;
-    height: 500px;
+    height: 600px;
     background: #32295a; /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, hsla(240, 93%, 5%, 0.22), hsla(238, 42%, 17%, 0.438)), url(Imagenes/acuerdo2.jpg);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, hsla(246, 92%, 19%, 0.699), hsla(246, 87%, 26%, 0.337)), url(Imagenes/acuerdo2.jpg);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
@@ -47,6 +47,13 @@
     color: #F9FDFD;
   
 
+}
+
+/* Seccion Ola */
+
+.ola{
+    margin-top: 350px;
+    
 }
 
 /* Seccion Quienes Somos */
@@ -106,7 +113,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #4BA5A6;
-    color: whitesmoke;
+    color: #F9FDFD;
     border: none;
     font-weight: 500;
     display: flex;
@@ -201,8 +208,61 @@
 #inputNombre, #inputEmail, #inputPlazo,  #inputMonto, #botonEnviar {
     width: 500px;
     height: 30px;
+}
+
+/* Seccion Banner */
+
+.conteinerBanner{
+    background-color: #0f415e;
+    height: 500px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    color: #F9FDFD;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contenedorInformacion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 350px;
+    align-items: center;
+}
+
+.contenedorInformacion h3{
+    font-size: 40px;
+    margin-bottom: 15px;
     
 }
+
+.contenedorInformacion span {
+    border-bottom: 2px solid #F9FDFD;
+}
+
+.contenedorPublicidad{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.contenedorPublicidad h3{
+    font-size: 20px;
+}
+
+.contenedorPublicidad img{
+    width: 45px;
+    margin-bottom: 15px;
+}
+
 
 
 
@@ -288,5 +348,15 @@
     
 }
 
+/* Seccion BAnner */
+
+.conteinerBanner{
+    height: 800px;
+}
+
+.contenedorInformacion h3{
+    font-size: 30px;
+    
+}
 
 }
