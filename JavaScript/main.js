@@ -37,3 +37,6 @@ $("#botonEnviar").click(validarPlazo)
 
 // Llamado a Funcion Plazo con evento Enter
 $("#inputPlazo").keydown(validarPlazoEnter)
+
+// Llamado a Funcion API
+$("#botonCotizacion").click(cotizacion)

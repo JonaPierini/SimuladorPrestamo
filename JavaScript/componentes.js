@@ -138,6 +138,13 @@ $(inputPlazo).attr("placeholder", "Ingrese plazo a calcular")
 $(divBotonEnviar).attr("id", "divBotonEnviar")
 $(botonEnviar).attr("id", "botonEnviar")
 $(botonEnviar).text("Enviar")
+$(botonEnviar).css("background-color", "#EA307A")
+$(botonEnviar).css("border", "transparent")
+$(botonEnviar).css("border-radius", "10px")
+$(botonEnviar).css("color", "#F9FDFD")
+$(botonEnviar).css("font-weight" ," 500")
+
+
 
 
 

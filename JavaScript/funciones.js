@@ -322,3 +322,28 @@ function borrarPlazo() {
     $("#nuevoDivPlazo").remove()
   }
 }
+
+
+
+// SECCION API
+
+function cotizacion(){
+
+$.ajax({
+    type: "get",
+    url: "https://www.dolarsi.com/api/api.php?type=valoresprincipales",
+    dataType: "JSON"
+    
+}). done(function(resultado){
+    Swal.fire({
+        title: "Compra / Venta: " + "$" + resultado[0].casa.compra + " / " + "$" + resultado[0].casa.venta,
+        icon: 'info',
+        html:
+          'Para mas info ' +
+          '<a href="https://www.dolarsi.com/">click aqui!</a> ',
+      })
+}). fail(function(xhr, status, error){
+    console.log(xhr); console.log(status); console.log(error)
+})
+
+}
