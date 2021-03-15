@@ -16,9 +16,9 @@
 .contenedorNavegador  {
     width: 100%;
     height: 600px;
-    background: #32295a; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(240, 93%, 5%, 0.22), hsla(238, 42%, 17%, 0.438)), url(Imagenes/acuerdo2.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(246, 92%, 19%, 0.699), hsla(246, 87%, 26%, 0.337)), url(Imagenes/acuerdo2.jpg);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    background: #554791; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(240, 46%, 36%, 0.22), hsla(238, 42%, 17%, 0.438)), url(Imagenes/acuerdo2.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(246, 53%, 24%, 0.699), hsla(246, 87%, 26%, 0.337)), url(Imagenes/acuerdo2.jpg);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -220,8 +220,8 @@
     width: 100%;
     height: 400px;
     background: #69c3e4dc; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(182, 86%, 61%, 0.562), hsla(177, 91%, 68%, 0.363)), url(Imagenes/dolar.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(194, 49%, 55%, 0.582), hsla(189, 65%, 50%, 0.548)), url(Imagenes/dolar.jpg);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    background: -webkit-linear-gradient(to right, hsla(181, 25%, 34%, 0.562), hsla(177, 47%, 36%, 0.363)), url(Imagenes/dolar.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(194, 32%, 39%, 0.582), hsla(189, 43%, 40%, 0.548)), url(Imagenes/dolar.jpg);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
