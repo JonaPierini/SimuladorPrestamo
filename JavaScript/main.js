@@ -40,3 +40,7 @@ $("#inputPlazo").keydown(validarPlazoEnter)
 
 // Llamado a Funcion API
 $("#botonCotizacion").click(cotizacion)
+
+// Llamado a funcion click escrbinos
+$("#botonUnClick").click(botonEscribinos)
+$("#botonEnviarFormulario").click(botonEnviarConsulta)

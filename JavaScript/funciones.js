@@ -343,7 +343,37 @@ $.ajax({
           '<a href="https://www.dolarsi.com/">click aqui!</a> ',
       })
 }). fail(function(xhr, status, error){
-    console.log(xhr); console.log(status); console.log(error)
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: "Algo salio mal. Intente mas tarde"
+      })
 })
 
+}
+
+
+// Boton unClick
+
+
+function botonEscribinos (){
+    $("#botonClickFormulario").toggle();
+}
+
+
+function botonEnviarConsulta () {
+    if($("#inputClick").val() === "" || $("#textareaClick").val() === "" ){
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'No has completado el formulario correctamente',
+          })
+    } else{
+        Swal.fire({
+            icon: 'success',
+            title: 'GRACIAS! En breve nos comunicaremos con vos!',
+            showConfirmButton: false,
+            timer: 1500
+          })
+    }
 }
