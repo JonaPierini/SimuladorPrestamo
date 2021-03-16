@@ -188,7 +188,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #193755;
+    color: #ED2F79;
+    background-color: #193755;
+    margin-bottom: 50px;
+    
 }
 .conteinerPrestamo{
     display: flex;

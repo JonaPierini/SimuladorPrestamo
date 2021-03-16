@@ -325,7 +325,13 @@ function borrarPlazo() {
 
 
 
-// SECCION API
+
+
+
+
+
+
+// SECCION AJAX / API
 
 function cotizacion(){
 
@@ -374,6 +380,13 @@ function botonEnviarConsulta () {
             title: 'GRACIAS! En breve nos comunicaremos con vos!',
             showConfirmButton: false,
             timer: 1500
-          })
+          }) 
+         borrarFormularioEnviar()
     }
+}
+
+
+function borrarFormularioEnviar() { 
+    $("#botonClickFormulario").hide()
+   
 }
