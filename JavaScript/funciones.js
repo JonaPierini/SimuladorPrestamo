@@ -204,7 +204,7 @@ function validarMonto() {
         // creo el p
         let nuevoPMonto = $("<p>")
         // creo el texto
-        let nuevoPTextoMonto = $(nuevoPMonto).text("Monto ingresado $" + $("#inputMonto").val())
+        let nuevoPTextoMonto = $(nuevoPMonto).text("Monto ingresado: $" + $("#inputMonto").val())
         // creo attr
         $(nuevoDivMonto).attr("id", "nuevoDivMonto")
         // uno
@@ -294,7 +294,7 @@ function validarPlazo() {
         // creo el p
         let nuevoPPlazo = $("<p>")
         // creo el texto
-        let nuevoPTextoPlazo = $(nuevoPPlazo).text("Plazo ingresado " + $("#inputPlazo").val() + " meses")
+        let nuevoPTextoPlazo = $(nuevoPPlazo).text("Plazo ingresado: " + $("#inputPlazo").val() + " meses")
         // creo attr
         $(nuevoDivPlazo).attr("id", "nuevoDivPlazo")
         // uno
@@ -322,6 +322,153 @@ function borrarPlazo() {
     $("#nuevoDivPlazo").remove()
   }
 }
+
+
+
+// funcion Calculadora
+function  calculadora () {
+    borrarCalculadora()
+    borrarBotonObteneTuPrestamo()
+    if(validarNombre() === true && validarEmail() === true && validarPlazo()=== true && validarMonto() === true){
+        let nuevoDivCalculadora = $("<div>")
+        let nuevoUlCalculadora = $("<ul>")
+        let nuevoLiCalculadora = $("<li>")
+        let nuevoLiCalculadora2 = $("<li>")
+        let nuevoLiCalculadora3 = $("<li>")
+        $(nuevoDivCalculadora).attr("id", "nuevoDivCalculadora")
+        $(nuevoUlCalculadora).attr("id", "nuevoUlCalculadora")
+        $("#conteinerPrestamo").append(nuevoDivCalculadora)
+        $(nuevoDivCalculadora).append(nuevoUlCalculadora)
+        $(nuevoUlCalculadora).append(nuevoLiCalculadora)
+        $(nuevoUlCalculadora).append(nuevoLiCalculadora2)
+        $(nuevoUlCalculadora).append(nuevoLiCalculadora3)
+        // cuentas
+        let pagoPorMes = Math.trunc(($("#inputMonto").val() * 0.3))
+        let plazoPorMes = Math.trunc(($("#inputPlazo").val()))
+        nuevoLiCalculadora.text("Pago por mes $" + pagoPorMes)
+        nuevoLiCalculadora2.text("Plazo " + plazoPorMes + " meses")
+        nuevoLiCalculadora3.text("Total a pagar $" + (pagoPorMes * plazoPorMes))
+
+        let nuevoDivCalculadoraBoton = $("<div>")
+        let nuevoBotonCalculadora = $("<button>")
+        $(nuevoDivCalculadoraBoton).attr("id", "nuevoDivCalculadoraBoton")
+        $("#conteinerPrestamo").append(nuevoDivCalculadoraBoton)
+        $(nuevoDivCalculadoraBoton).append(nuevoBotonCalculadora)
+        // Boton
+        $(nuevoBotonCalculadora).attr("id", "nuevoBotonCalculadora")
+        $(nuevoBotonCalculadora).text("Obtene tu prestamo YA")
+
+        $("#nuevoBotonCalculadora").click(nosComunicamosYa)
+    }
+}
+
+
+// funcion borrar calculadora
+function borrarCalculadora() {
+    if($("#nuevoDivCalculadora") !== null){
+        $("#nuevoDivCalculadora").remove()
+      }
+}
+
+
+// funcion Borrar boton obten tu prestamo
+function borrarBotonObteneTuPrestamo() {
+    if($("#nuevoDivCalculadoraBoton") !== null){
+        $("#nuevoDivCalculadoraBoton").remove()
+      }
+}
+
+// funcion nos comunicamos YA
+function  nosComunicamosYa () {
+    Swal.fire({
+        title: "Hola! En instantes nos comunicamos",
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
+}
+
+
+
+
+
+
+
+
+
+
+
+// Funcion Almacenar Datos
+
+function almacenarDatos (){
+    if(validarNombre () == true && validarEmail() == true && validarMonto() == true && validarPlazo() == true){
+        function Usuario (nombre, email, monto, plazo){
+            this.nombre = nombre,
+            this.email = email,
+            this.monto = monto,
+            this.plazo = plazo
+        }
+        let usuario1 = new Usuario ($("#inputNombre").val(), $("#inputEmail").val(), $("#inputMonto").val(), $("#inputPlazo").val())
+        console.log(usuario1)
+        // guardar en LocalStorage
+        let convertirCadena = JSON.stringify(usuario1)
+        localStorage.setItem("datos", convertirCadena)
+
+       
+
+    }
+}
+
+
+// LLamado a funcion almacenar Datos
+$("#botonEnviar").click(almacenarDatos)
+
+
+
+
+
+
+// Funcion recuperar datos
+// function recuperarDatos (){
+//     if(validarNombre () == true && validarEmail() == true && validarMonto() == true && validarPlazo() == true){
+//      // recuperar datos
+//      let recuperarDatos = localStorage.getItem("datos")
+//      let convertirAObjeto = JSON.parse(recuperarDatos)
+//      console.log(convertirAObjeto)
+
+//      // dom
+//      let nuevoDivDatos = $("<div>")
+//      let nuevoBotonDatos = $("<button>")
+//      nuevoBotonDatos.attr("id", "nuevoBotonDatos")
+//      nuevoDivDatos.attr("id", "nuevoDivDatos")
+//      nuevoBotonDatos.text("Su solicitudes")
+//      $("#conteinerPrestamo").append(nuevoDivDatos)
+//      $(nuevoDivDatos).append(nuevoBotonDatos)
+//      // Llamado a la funcion prueba
+//      $("#nuevoBotonDatos").click(prueba)
+// }
+
+// }
+
+// $("#botonEnviar").click(recuperarDatos)
+
+
+// function prueba() {
+//     console.log("hola")
+// }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -388,5 +535,5 @@ function botonEnviarConsulta () {
 
 function borrarFormularioEnviar() { 
     $("#botonClickFormulario").hide()
-   
 }
+

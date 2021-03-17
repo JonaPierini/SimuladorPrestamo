@@ -201,19 +201,27 @@
     flex-wrap: wrap;
 }
 
-#divNombre, #divEmail, #divPlazo, #divMonto, #divBotonEnviar{
+#divNombre, #divEmail, #divPlazo, #divMonto, #divBotonEnviar, #nuevoDivCalculadora, #nuevoDivCalculadoraBoton{
    margin-bottom: 10px;
 }
 
-#divNombre, #divEmail, #divPlazo, #divMonto, #divBotonEnviar{
+#divNombre, #divEmail, #divPlazo, #divMonto, #divBotonEnviar, #nuevoDivCalculadora, #nuevoDivCalculadoraBoton {
     height: 45px;
  }
 
-#inputNombre, #inputEmail, #inputPlazo,  #inputMonto, #botonEnviar {
+#inputNombre, #inputEmail, #inputPlazo,  #inputMonto, #botonEnviar , #nuevoUlCalculadora, #nuevoBotonCalculadora{
     width: 500px;
     height: 30px;
 }
-
+/* boton que aparece cuando todo es true */
+#nuevoBotonCalculadora{
+  background-color: #193755;
+  border-color: #193755;
+  border-radius: 10px;
+  color: #F9FDFD;
+  font-weight: 500;
+  margin-top: 40px;
+}
 
 
 /* Seccion API */
@@ -453,10 +461,16 @@
    font-size: 25px;
 }
 
-#inputNombre, #inputEmail, #inputPlazo,  #inputMonto, #botonEnviar {
+#inputNombre, #inputEmail, #inputPlazo,  #inputMonto, #botonEnviar, #nuevoBotonCalculadora{
     width: 300px;
   
     
+}
+
+#nuevoDivCalculadora{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Seccion API */

@@ -44,3 +44,6 @@ $("#botonCotizacion").click(cotizacion)
 // Llamado a funcion click escrbinos
 $("#botonUnClick").click(botonEscribinos)
 $("#botonEnviarFormulario").click(botonEnviarConsulta)
+
+//Llamado calculadora
+$("#botonEnviar").click(calculadora)
