@@ -47,8 +47,7 @@ function validarNombre() {
         $(nuevoDivNombre).append(nuevoPNombre)
         $(nuevoPNombre).append(nuevoPTexto)
         // estilo
-        $(nuevoPNombre).css("color", "red")
-       
+        $(nuevoPNombre).css("color", "red")     
       
     } else{
         // creo el div
@@ -162,7 +161,7 @@ function validarMonto() {
         $(nuevoPMonto).append(nuevoPTextoMonto)
         // estilo
         $(nuevoPMonto).css("color", "red")
-       
+
       
     } else if($("#inputMonto").val() < 1000){
         // creo el div
@@ -179,7 +178,6 @@ function validarMonto() {
         $(nuevoPMonto).append(nuevoPTextoMonto)
         // estilo
         $(nuevoPMonto).css("color", "red")
-       
       
     } else if($("#inputMonto").val() > 500000){
         // creo el div
@@ -197,7 +195,6 @@ function validarMonto() {
         // estilo
         $(nuevoPMonto).css("color", "red")
        
-      
     } else{
         // creo el div
         let nuevoDivMonto = $("<div>")
@@ -252,7 +249,6 @@ function validarPlazo() {
         $(nuevoPPlazo).append(nuevoPTextoPlazo)
         // estilo
         $(nuevoPPlazo).css("color", "red")
-       
       
     } else if($("#inputPlazo").val() < 6){
         // creo el div
@@ -269,7 +265,6 @@ function validarPlazo() {
         $(nuevoPPlazo).append(nuevoPTextoPlazo)
         // estilo
         $(nuevoPPlazo).css("color", "red")
-       
       
     } else if($("#inputPlazo").val() > 48){
         // creo el div
@@ -286,7 +281,7 @@ function validarPlazo() {
         $(nuevoPPlazo).append(nuevoPTextoPlazo)
         // estilo
         $(nuevoPPlazo).css("color", "red")
-       
+
       
     } else{
         // creo el div
@@ -322,7 +317,6 @@ function borrarPlazo() {
     $("#nuevoDivPlazo").remove()
   }
 }
-
 
 
 // funcion Calculadora
@@ -380,7 +374,15 @@ function borrarBotonObteneTuPrestamo() {
 
 // funcion nos comunicamos YA
 function  nosComunicamosYa () {
-    Swal.fire('En instantes nos comunicamos con vos')
+    Swal.fire({
+        title: "En instantes nos comunicamos",
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
 }
 
 
@@ -451,10 +453,6 @@ $("#botonEnviar").click(almacenarDatos)
 // function prueba() {
 //     console.log("hola")
 // }
-
-
-
-
 
 
 
