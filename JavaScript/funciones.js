@@ -380,15 +380,7 @@ function borrarBotonObteneTuPrestamo() {
 
 // funcion nos comunicamos YA
 function  nosComunicamosYa () {
-    Swal.fire({
-        title: "Hola! En instantes nos comunicamos",
-        showClass: {
-          popup: 'animate__animated animate__fadeInDown'
-        },
-        hideClass: {
-          popup: 'animate__animated animate__fadeOutUp'
-        }
-      })
+    Swal.fire('En instantes nos comunicamos con vos')
 }
 
 
