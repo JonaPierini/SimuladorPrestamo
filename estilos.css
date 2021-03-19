@@ -213,6 +213,14 @@
     width: 500px;
     height: 30px;
 }
+
+#inputNombre, #inputEmail, #inputPlazo,  #inputMonto{
+    border-color: transparent;
+    border-bottom: 2px solid #000B3B;
+  
+    
+}
+
 /* boton que aparece cuando todo es true */
 #nuevoBotonCalculadora{
   background-color: #193755;
@@ -467,13 +475,6 @@
     
 }
 
-
-#inputNombre, #inputEmail, #inputPlazo,  #inputMonto{
-    border-color: transparent;
-    border-bottom: 2px solid #000B3B;
-  
-    
-}
 
 #nuevoDivCalculadora{
     width: 300px;
