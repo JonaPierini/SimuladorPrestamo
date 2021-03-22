@@ -375,7 +375,7 @@ function borrarBotonObteneTuPrestamo() {
 // funcion nos comunicamos YA
 function  nosComunicamosYa () {
     Swal.fire({
-        title: "En instantes nos comunicamos",
+        title: "En instantes nos comunicamos con VOS!",
         showClass: {
           popup: 'animate__animated animate__fadeInDown'
         },
@@ -384,13 +384,6 @@ function  nosComunicamosYa () {
         }
       })
 }
-
-
-
-
-
-
-
 
 
 
@@ -406,61 +399,74 @@ function almacenarDatos (){
             this.plazo = plazo
         }
         let usuario1 = new Usuario ($("#inputNombre").val(), $("#inputEmail").val(), $("#inputMonto").val(), $("#inputPlazo").val())
-        console.log(usuario1)
-        // guardar en LocalStorage
-        let convertirCadena = JSON.stringify(usuario1)
-        localStorage.setItem("datos", convertirCadena)
+        // seccion local
+        arrayVacio = []
+        if(localStorage.getItem("datos") !== null){
+            arrayVacio = JSON.parse(localStorage.getItem("datos"))
+        }
+        arrayVacio.push(usuario1)
+        let transformarACadena = JSON.stringify(arrayVacio)
+        localStorage.setItem("datos", transformarACadena)
 
-       
+    
+    }   
 
-    }
 }
 
+// Funcion recuperar Datos
+
+function recuperarDatos (){
+    
+    if(localStorage.getItem("datos") !== null){
+        $("#ultimosCalculosBoton").click(prueba)
+    let transformarObjeto = JSON.parse(localStorage.getItem("datos"))  
+    for(let i = 0; i < transformarObjeto.length; i++){
+        
+        borrarRecuperarDatos()
+        let recuperarDatosDiv = $("<div>")
+        let recuperarDatosP = $("<p>")
+        recuperarDatosDiv.attr("id", "recuperarDatosId")
+        let recuperarDatosText = recuperarDatosP.text("Nombre: " + transformarObjeto[i].nombre + " - " + "Plazo: " + transformarObjeto[i].plazo + " meses" +  " - " + "Monto: $" + transformarObjeto[i].monto)
+        $(recuperarDatosP).css("margin-top", "10px")
+        $(recuperarDatosP).css("text-align", "center")
+        $("#ultimosCalculos").append(recuperarDatosDiv)
+        recuperarDatosDiv.append(recuperarDatosP)
+        recuperarDatosP.append(recuperarDatosText)  
+        
+    } 
+}   else{
+        $("#ultimosCalculosBoton").click(prueba)
+        borrarRecuperarDatos()
+        let recuperarDatosDiv = $("<div>")
+        let recuperarDatosP = $("<p>")
+        recuperarDatosDiv.attr("id", "recuperarDatosId")
+        let recuperarDatosText = recuperarDatosP.text("No hay solicitudes cargadas")
+        $(recuperarDatosP).css("margin-top", "10px")
+        $("#ultimosCalculos").append(recuperarDatosDiv)
+        recuperarDatosDiv.append(recuperarDatosP)
+        recuperarDatosP.append(recuperarDatosText)  
+}
+}
 
 // LLamado a funcion almacenar Datos
 $("#botonEnviar").click(almacenarDatos)
+$("#ultimosCalculosBoton").click(recuperarDatos)
 
 
 
+// Funcion BorrarDatos
+
+function borrarRecuperarDatos() {
+    if($("#recuperarDatosId") !== null){
+      $("#recuperarDatosId").remove()
+    }
+  }
 
 
 
-// Funcion recuperar datos
-// function recuperarDatos (){
-//     if(validarNombre () == true && validarEmail() == true && validarMonto() == true && validarPlazo() == true){
-//      // recuperar datos
-//      let recuperarDatos = localStorage.getItem("datos")
-//      let convertirAObjeto = JSON.parse(recuperarDatos)
-//      console.log(convertirAObjeto)
-
-//      // dom
-//      let nuevoDivDatos = $("<div>")
-//      let nuevoBotonDatos = $("<button>")
-//      nuevoBotonDatos.attr("id", "nuevoBotonDatos")
-//      nuevoDivDatos.attr("id", "nuevoDivDatos")
-//      nuevoBotonDatos.text("Su solicitudes")
-//      $("#conteinerPrestamo").append(nuevoDivDatos)
-//      $(nuevoDivDatos).append(nuevoBotonDatos)
-//      // Llamado a la funcion prueba
-//      $("#nuevoBotonDatos").click(prueba)
-// }
-
-// }
-
-// $("#botonEnviar").click(recuperarDatos)
-
-
-// function prueba() {
-//     console.log("hola")
-// }
-
-
-
-
-
-
-
-
+function prueba() {
+    $("#recuperarDatosId").toggle()
+  }
 
 
 

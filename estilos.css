@@ -189,7 +189,7 @@
     justify-content: center;
     align-items: center;
     color: #ED2F79;
-    background-color: #193755;
+    letter-spacing: 10px;
     margin-bottom: 50px;
     
 }
@@ -219,6 +219,29 @@
     border-bottom: 2px solid #000B3B;
   
     
+}
+
+/* Seccion útlimos calculos */
+
+.ultimosCalculos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+
+.ultimosCalculosBoton{
+    width: 200px;
+    background-color: #11A8A7;
+    border-color: #11A8A7;
+    border-radius: 10px;
+    color: #F9FDFD;
+    font-weight: 400;
+    padding: 3px;
 }
 
 /* boton que aparece cuando todo es true */
@@ -464,6 +487,11 @@
 
 
 /* SECCION PRESTAMO */
+
+.tituloPrestamo{
+    letter-spacing: 5px;
+    
+}
 
 .tituloPrestamo h1{
    font-size: 25px;
