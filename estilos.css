@@ -17,8 +17,8 @@
     width: 100%;
     height: 600px;
     background: #554791; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(240, 46%, 36%, 0.22), hsla(238, 42%, 17%, 0.438)), url(Imagenes/acuerdo2.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(246, 53%, 24%, 0.699), hsla(246, 87%, 26%, 0.337)), url(Imagenes/acuerdo2.jpg);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    background: -webkit-linear-gradient(to right, hsla(240, 63%, 82%, 0.795), hsla(238, 63%, 12%, 0.986)), url(Imagenes/acuerdo2.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(246, 25%, 92%, 0.37), hsl(247, 90%, 8%)), url(Imagenes/acuerdo2.jpg);; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
