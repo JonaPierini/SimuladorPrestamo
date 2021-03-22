@@ -47,3 +47,8 @@ $("#botonEnviarFormulario").click(botonEnviarConsulta)
 
 //Llamado calculadora
 $("#botonEnviar").click(calculadora)
+
+// LLamado a funcion almacenar Datos
+$("#botonEnviar").click(almacenarDatos)
+$("#ultimosCalculosBoton").click(recuperarDatos)
+

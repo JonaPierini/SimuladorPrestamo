@@ -448,12 +448,6 @@ function recuperarDatos (){
 }
 }
 
-// LLamado a funcion almacenar Datos
-$("#botonEnviar").click(almacenarDatos)
-$("#ultimosCalculosBoton").click(recuperarDatos)
-
-
-
 // Funcion BorrarDatos
 
 function borrarRecuperarDatos() {

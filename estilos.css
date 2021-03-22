@@ -441,7 +441,7 @@
 
 .Redes__Sociales .Redes__Sociales--whats a, .Redes__Sociales .Redes__Sociales--instagram a{
     text-decoration: none;
-    color: #ffffff;
+    color: #F9FDFD;
     font-size: 15px;
 }
 
@@ -473,11 +473,11 @@
     margin-bottom: 15px;
     letter-spacing: 5px;
     font-size: 15px;
-    color: #ffffff ;
+    color: #F9FDFD ;
 }
 
 .DerechosFooter p{
-    color: #ffffff;
+    color: #F9FDFD;
     font-size: 12px;
 }
 
@@ -629,7 +629,7 @@
 /* FOOTER */
 
 .titulofooter{
-    padding-bottom: 8px;
+    padding: 8px;
 }
 
 .titulofooter a {
@@ -668,12 +668,21 @@
 }
 
 
-@media (max-width: 350px){
+@media (max-width: 390px){
     .seccionTexto{
         width: 280px;
         font-size: 25px;
     }
     .contenedorApi{
         margin-left: 5px;
+    }
+
+    .tituloPrestamo{
+        letter-spacing: 2px;
+        
+    }
+    
+    .tituloPrestamo h1{
+       font-size: 20px;
     }
 }
