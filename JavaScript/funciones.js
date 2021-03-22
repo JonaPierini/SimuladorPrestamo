@@ -506,7 +506,7 @@ $.ajax({
 
 
 function botonEscribinos (){
-    $("#botonClickFormulario").toggle();
+    $("#botonClickFormulario").toggle(500);
 }
 
 

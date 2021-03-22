@@ -405,6 +405,84 @@
 }
 
 
+/* FOOTER */
+
+.ContenedorFooter{
+    background-color: #092F57;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.titulofooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    background: #000B3B;
+}
+
+.titulofooter a{
+    color: #ED2F79;
+    font-size: 25px;
+    padding-top: 5px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.Redes__Sociales .Redes__Sociales--whats a, .Redes__Sociales .Redes__Sociales--instagram a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.Redes__Sociales li{
+    list-style: none;
+}
+
+.Redes__Sociales{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.Redes__Sociales li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.Redes__Sociales img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.ContactosFooter{
+    font-family: 'Mukta', sans-serif;
+    margin-bottom: 15px;
+    letter-spacing: 5px;
+    font-size: 15px;
+    color: #ffffff ;
+}
+
+.DerechosFooter p{
+    color: #ffffff;
+    font-size: 12px;
+}
+
+
+
 @media (max-width: 850px){
 /* boton contactos */
     .contactanos{
@@ -546,6 +624,46 @@
 .contenedorTituloClick h3{
     margin-top: 15px;
 }
+
+
+/* FOOTER */
+
+.titulofooter{
+    padding-bottom: 8px;
+}
+
+.titulofooter a {
+    font-size: 15px;
+    display: flex;
+}
+
+.Redes__Sociales .Redes__Sociales--whats a{
+    font-size: 12px;
+}
+
+.Redes__Sociales .Redes__Sociales--instagram a{
+    font-size: 12px;
+}
+
+.Redes__Sociales--instagram img{
+    width: 22px;
+    height: 22px;
+}
+
+.Redes__Sociales--whats img{
+    width: 22px;
+    height: 22px;
+}
+
+.ContactosFooter{
+    font-size: 12px;
+}
+
+.DerechosFooter p{
+    font-size: 10px;
+}
+
+
 
 }
 
